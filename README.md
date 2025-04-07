@@ -1,6 +1,6 @@
 # aula06pilha
 
-# Começando com as classes No e Pilha que foram fornecidas
+Começando com as classes No e Pilha que foram fornecidas
 class No:
     def __init__(self, valor):
         self.valor = valor
@@ -11,13 +11,13 @@ class Pilha:
         self.topo = None
 
     def push(self, valor):
-        # Adiciona um valor na pilha
+        Adiciona um valor na pilha
         novo_no = No(valor)
         novo_no.proximo = self.topo
         self.topo = novo_no
 
     def pop(self):
-        # Remove um valor do topo da pilha
+         Remove um valor do topo da pilha
         if self.topo is not None:
             removido = self.topo
             self.topo = self.topo.proximo
@@ -38,11 +38,11 @@ class Pilha:
 def reverter_string(string):
     pilha = Pilha()  # Instanciando uma pilha
 
-    # Passo 1: Colocar os caracteres da string na pilha
+     Colocar os caracteres da string na pilha
     for caractere in string:
         pilha.push(caractere)
 
-    # Passo 2: Retirar os caracteres da pilha para formar a string invertida
+    Retirar os caracteres da pilha para formar a string invertida
     string_invertida = ""
     while not pilha.is_empty():
         string_invertida += pilha.pop()
